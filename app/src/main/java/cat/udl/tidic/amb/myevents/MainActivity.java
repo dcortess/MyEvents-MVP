@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         assert extras != null;
         try
         {
-            contador = 1 + extras.getInt("Contador");;
-            updateContador(contador);
+            contador = extras.getInt("Contador");
+            updateContador();
         }
         catch(Exception e)
         {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void updateContador(int contador)
+    public void updateContador()
     {
         String contador_plus = Integer.toString(contador);
         num_Event.setText(contador_plus);

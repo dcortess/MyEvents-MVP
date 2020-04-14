@@ -42,6 +42,7 @@ public class Registrate extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Registrate.this, MainActivity.class);
+                intent.putExtra("Contador",contador);
                 startActivity(intent);
             }
         });
